@@ -2,7 +2,7 @@
 #include <string>
 #include <Windows.h>
 
-// ============ ассортимент магазина ============
+
 struct Drink {
     std::string name;
     int price;
@@ -13,11 +13,11 @@ Drink fruitList[4] = { {"Яблочный", 90}, {"Апельсиновый", 11
 Drink vegList[3] = { {"Томатный", 80}, {"Луковый", 95}, {"Огуречный", 100} };
 Drink teaList[2] = { {"Чесночный", 100}, {"Петрушевый", 105} };
 
-// ============ содержимое корзины ============
+
 int billSum = 0;
 int billCount = 0;
 
-// ============ утилиты ============
+
 void clearScreen() { system("cls"); }
 
 void printTitle() {
@@ -29,7 +29,7 @@ void addToCart(int price, int amount) {
     billCount += amount;
 }
 
-// ============ покупка внутри раздела ============
+
 void buyFromCategory(int category) {
     int itemNum, amount, again;
     int price = 0, maxItems = 0;
@@ -88,7 +88,7 @@ void buyFromCategory(int category) {
     }
 }
 
-// ============ точка входа ============
+
 int main() {
     SetConsoleCP(CP_UTF8);
     SetConsoleOutputCP(CP_UTF8);
